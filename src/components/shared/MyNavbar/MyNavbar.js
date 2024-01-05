@@ -35,23 +35,20 @@ class MyNavbar extends React.Component {
                      <NavbarToggler onClick={this.toggle} />
                      <Collapse isOpen={isOpen} navbar>
                         <Nav className="navbar ml-auto navbar-collapse">
-                        <img className="home-title"to="/home" src={logo} alt="logo"></img>
                        <NavItem>
                         <NavLink className="navbar-links" tag={RRNavLink} to='/home'>Home</NavLink>
                         </NavItem>
                         <NavItem>
-                          <NavLink className="navbar-links" tag={RRNavLink} to='/aboutUs'>About Us</NavLink>
+                          <NavLink className="navbar-links" tag={RRNavLink} to='/aboutUs'>About</NavLink>
+                        </NavItem>
+                        <img className="home-title"to="/home" src={logo} alt="logo"></img>
+                        <NavItem>
+                           <NavLink className="navbar-links" tag={RRNavLink} to='/products'>Ebooks</NavLink>
                         </NavItem>
                         <NavItem>
-                           <NavLink className="navbar-links" tag={RRNavLink} to='/products'>Products</NavLink>
+                           <NavLink className="navbar-links" tag={RRNavLink} to='/contactUs'>Contact</NavLink>
                         </NavItem>
-                        <NavItem>
-                           <NavLink className="navbar-links" tag={RRNavLink} to='/contactUs'>Contact Us</NavLink>
-                        </NavItem>
-                        <NavItem>
-                            <NavLink className="navbar-links" tag={RRNavLink} to='/requestQuote'>Request A Quote</NavLink>
-                       </NavItem>
-                                     </Nav>
+                      </Nav>
                      </Collapse>
                 </Navbar>
             </div>
